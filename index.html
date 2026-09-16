@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>KaileeWatch Short Dramas Studios | Customer Service</title>
+  <title>KaileeWatch Short Dramas Studios</title>
+
   <meta
     name="description"
-    content="Official customer service center for KaileeWatch Short Dramas Studios."
+    content="Official website of KaileeWatch Short Dramas Studios."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -15,15 +16,16 @@
 
 <body>
 
-  <!-- Background effects -->
   <div class="stars"></div>
   <div class="glow glow-one"></div>
   <div class="glow glow-two"></div>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <header class="navbar">
-    <a href="#" class="logo">
+
+    <a href="#home" class="logo">
       <span class="logo-mark">K</span>
+
       <span>
         <strong>KaileeWatch</strong>
         <small>SHORT DRAMAS STUDIOS</small>
@@ -31,176 +33,288 @@
     </a>
 
     <nav>
+      <a href="#productions">Productions</a>
+      <a href="#episodes">Episodes</a>
       <a href="#contact">Contact</a>
-      <a href="#about">About</a>
     </nav>
+
   </header>
 
-  <!-- Hero -->
+
+  <!-- HERO -->
   <main>
 
-    <section class="hero">
+    <section class="hero" id="home">
+
       <div class="hero-badge">
-        ✦ OFFICIAL CUSTOMER SERVICE CENTER
+        ✦ INDEPENDENT AI DRAMA STUDIO
       </div>
 
       <h1>
-        Welcome to
-        <span>KaileeWatch</span>
+        Stories made
+        <span>for the screen.</span>
       </h1>
 
-      <p class="hero-subtitle">
-        Short Dramas Studios
-      </p>
-
       <p class="hero-description">
-        Need to reach the studio? Our receptionist line is available
-        for incoming calls and studio inquiries.
+        Welcome to KaileeWatch Short Dramas Studios —
+        an independent studio creating original short-form dramas.
       </p>
 
-      <a href="#contact" class="primary-button">
-        Contact the Studio
-        <span>→</span>
-      </a>
+      <div class="hero-buttons">
+
+        <a href="#productions" class="primary-button">
+          Explore Productions
+          <span>→</span>
+        </a>
+
+        <a href="#contact" class="secondary-button">
+          Contact Studio
+        </a>
+
+      </div>
+
+      <div class="scroll-indicator">
+        <span></span>
+        SCROLL TO EXPLORE
+      </div>
+
     </section>
 
-    <!-- Service section -->
-    <section class="services" id="contact">
+
+    <!-- STUDIO INTRO -->
+    <section class="intro">
 
       <div class="section-heading">
         <span>01</span>
+
         <div>
-          <p>CONTACT</p>
-          <h2>Reach KaileeWatch</h2>
+          <p>THE STUDIO</p>
+          <h2>Welcome to KaileeWatch.</h2>
         </div>
       </div>
 
+      <div class="intro-grid">
+
+        <div>
+          <p>
+            KaileeWatch Short Dramas Studios is an independent
+            short-drama studio creating original stories with
+            AI-powered production tools.
+          </p>
+
+          <p>
+            Every production is independently developed,
+            produced, and released by the studio.
+          </p>
+        </div>
+
+        <div class="studio-stat">
+          <strong>01</strong>
+          <span>HUMAN STUDIO DIRECTOR</span>
+        </div>
+
+        <div class="studio-stat">
+          <strong>01</strong>
+          <span>AI RECEPTIONIST</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTIONS -->
+    <section class="productions" id="productions">
+
+      <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+          <p>PRODUCTIONS</p>
+          <h2>Current Series</h2>
+        </div>
+
+      </div>
+
+
+      <article class="series-card">
+
+        <div class="series-art">
+
+          <div class="art-glow"></div>
+
+          <div class="series-art-title">
+            <small>AN ORIGINAL SERIES</small>
+
+            <h2>
+              The Secret<br>
+              Lucky Star
+            </h2>
+
+            <em>Secretly Bringing Luck</em>
+
+            <span>KAILEEWATCH SHORT DRAMAS STUDIOS</span>
+          </div>
+
+        </div>
+
+
+        <div class="series-info">
+
+          <div class="production-status">
+            <span></span>
+            IN PRODUCTION
+          </div>
+
+          <h2>
+            The Secret Lucky Star:
+            <em>Secretly Bringing Luck</em>
+          </h2>
+
+          <p class="series-description">
+            An original Chinese short-drama series following
+            Xingyao and the secret surrounding her extraordinary
+            ability to bring luck.
+          </p>
+
+
+          <!-- PROGRESS -->
+          <div class="progress-section">
+
+            <div class="progress-header">
+              <span>PRODUCTION PROGRESS</span>
+              <strong id="progressText">4 / 15</strong>
+            </div>
+
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="progressFill"
+              ></div>
+            </div>
+
+            <p id="progressPercentage">
+              27% of the series completed
+            </p>
+
+          </div>
+
+
+          <a href="#episodes" class="primary-button small">
+            View Episodes
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- EPISODES -->
+    <section class="episodes" id="episodes">
+
+      <div class="section-heading">
+
+        <span>03</span>
+
+        <div>
+          <p>EPISODE GUIDE</p>
+          <h2>15 Episodes</h2>
+        </div>
+
+      </div>
+
+
+      <div class="episode-grid" id="episodeGrid"></div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+      <div class="section-heading">
+
+        <span>04</span>
+
+        <div>
+          <p>CUSTOMER SERVICE</p>
+          <h2>Contact the Studio</h2>
+        </div>
+
+      </div>
+
+
       <div class="contact-grid">
 
-        <!-- Receptionist -->
+        <!-- RECEPTIONIST -->
         <article class="contact-card featured">
+
           <div class="card-icon">☎</div>
 
           <div class="card-content">
-            <span class="card-label">RECEPTIONIST LINE</span>
+
+            <span class="card-label">
+              RECEPTIONIST LINE
+            </span>
 
             <h3>KaileeWatch Reception</h3>
 
             <p>
-              Our receptionist handles incoming studio calls.
-              Please call this number for general inquiries.
+              Call our receptionist line for general
+              studio inquiries.
             </p>
 
             <a
               href="tel:+10000000000"
-              class="card-button"
               id="receptionistButton"
+              class="card-button"
             >
-              <span>☎</span>
-              Call Receptionist
+              ☎ Call Receptionist
             </a>
+
           </div>
 
           <div class="status">
             <span></span>
-            Reception Line
+            PHONE ONLY
           </div>
+
         </article>
 
-        <!-- Director -->
+
+        <!-- DIRECTOR -->
         <article class="contact-card">
+
           <div class="card-icon">★</div>
 
           <div class="card-content">
-            <span class="card-label">DIRECT CONTACT</span>
+
+            <span class="card-label">
+              DIRECT CONTACT
+            </span>
 
             <h3>Studio Director</h3>
 
             <p>
-              For matters that need to reach the studio director
-              directly, use the director's private line.
+              For matters that need to reach the studio
+              director directly.
             </p>
 
             <a
               href="tel:+10000000000"
-              class="card-button secondary"
               id="directorButton"
+              class="card-button secondary"
             >
-              <span>📱</span>
-              Contact Director
+              📱 Contact Director
             </a>
+
           </div>
+
         </article>
-
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about" id="about">
-
-      <div class="section-heading">
-        <span>02</span>
-        <div>
-          <p>THE STUDIO</p>
-          <h2>About KaileeWatch</h2>
-        </div>
-      </div>
-
-      <div class="about-box">
-        <div class="about-text">
-          <span class="mini-label">INDEPENDENT • AI-POWERED • ORIGINAL</span>
-
-          <h2>
-            Stories made
-            <em>for the screen.</em>
-          </h2>
-
-          <p>
-            KaileeWatch Short Dramas Studios is an independent studio
-            creating original short-form dramas with AI-powered
-            production tools.
-          </p>
-
-          <p>
-            From story development to finished episodes, every
-            production is created independently with a focus on
-            imaginative characters and cinematic storytelling.
-          </p>
-        </div>
-
-        <div class="studio-mark">
-          <div class="big-k">K</div>
-          <span>KAILEEWATCH</span>
-          <small>SHORT DRAMAS STUDIOS</small>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Featured production -->
-    <section class="production">
-
-      <div class="production-card">
-
-        <div class="production-number">
-          <span>FEATURED</span>
-          <strong>01</strong>
-        </div>
-
-        <div>
-          <span class="mini-label">CURRENT PRODUCTION</span>
-
-          <h2>
-            The Secret Lucky Star:
-            <br>
-            <em>Secretly Bringing Luck</em>
-          </h2>
-
-          <p>
-            An original Chinese short-drama series from
-            KaileeWatch Short Dramas Studios.
-          </p>
-        </div>
 
       </div>
 
@@ -208,27 +322,34 @@
 
   </main>
 
-  <!-- Footer -->
+
+  <!-- FOOTER -->
   <footer>
+
     <div class="footer-brand">
+
       <span class="logo-mark">K</span>
 
       <div>
         <strong>KaileeWatch</strong>
         <small>SHORT DRAMAS STUDIOS</small>
       </div>
+
     </div>
 
     <p>
-      © <span id="year"></span> KaileeWatch Short Dramas Studios.
-      All rights reserved.
+      © <span id="year"></span>
+      KaileeWatch Short Dramas Studios.
     </p>
 
-    <p class="footer-note">
-      Independent short-drama production studio.
+    <p>
+      Independent AI-powered short dramas.
     </p>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
