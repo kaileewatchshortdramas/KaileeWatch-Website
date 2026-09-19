@@ -53,7 +53,8 @@ const episodes = [
   {
     number: 6,
     status: "future",
-    label: "NOT YET IN PRODUCTION"
+    label: "NOT YET IN PRODUCTION",
+    special: true
   },
 
   {
@@ -77,37 +78,6 @@ const episodes = [
   {
     number: 10,
     status: "future",
-    label: "NOT YET IN PRODUCTION",
-    special: true
-  },
-
-  {
-    number: 11,
-    status: "future",
-    label: "NOT YET IN PRODUCTION"
-  },
-
-  {
-    number: 12,
-    status: "future",
-    label: "NOT YET IN PRODUCTION"
-  },
-
-  {
-    number: 13,
-    status: "future",
-    label: "NOT YET IN PRODUCTION"
-  },
-
-  {
-    number: 14,
-    status: "future",
-    label: "NOT YET IN PRODUCTION"
-  },
-
-  {
-    number: 15,
-    status: "future",
     label: "NOT YET IN PRODUCTION"
   }
 
@@ -121,51 +91,61 @@ const episodes = [
 const episodeGrid =
   document.getElementById("episodeGrid");
 
-episodes.forEach((episode) => {
 
-  const card =
-    document.createElement("article");
+if (episodeGrid) {
 
-  card.className =
-    `episode-card ${episode.status}`;
+  episodeGrid.innerHTML = "";
 
-  card.innerHTML = `
+  episodes.forEach((episode) => {
 
-    ${
-      episode.special
-        ? `<span class="special-label">✦ MAJOR STORY EPISODE</span>`
-        : ""
-    }
+    const card =
+      document.createElement("article");
 
-    <div class="episode-number">
-      ${String(episode.number).padStart(2, "0")}
-    </div>
+    card.className =
+      `episode-card ${episode.status}`;
 
-    <h3>
-      Episode ${episode.number}
-    </h3>
+    card.innerHTML = `
 
-    <span class="episode-status">
-      ${episode.label}
-    </span>
+      ${
+        episode.special
+          ? `<span class="special-label">✦ MAJOR STORY EPISODE</span>`
+          : ""
+      }
 
-  `;
+      <div class="episode-number">
+        ${String(episode.number).padStart(2, "0")}
+      </div>
 
-  episodeGrid.appendChild(card);
+      <h3>
+        Episode ${episode.number}
+      </h3>
 
-});
+      <span class="episode-status">
+        ${episode.label}
+      </span>
+
+    `;
+
+    episodeGrid.appendChild(card);
+
+  });
+
+}
 
 
 // ---------------------------------------------
 // PRODUCTION PROGRESS
 // ---------------------------------------------
 
-const totalEpisodes = episodes.length;
+const totalEpisodes =
+  episodes.length;
+
 
 const completedEpisodes =
   episodes.filter(
     episode => episode.status === "complete"
   ).length;
+
 
 const progress =
   (completedEpisodes / totalEpisodes) * 100;
@@ -214,6 +194,7 @@ const receptionistButton =
     "receptionistButton"
   );
 
+
 const directorButton =
   document.getElementById(
     "directorButton"
@@ -242,6 +223,7 @@ if (directorButton) {
 
 const year =
   document.getElementById("year");
+
 
 if (year) {
 
@@ -303,10 +285,13 @@ revealItems.forEach((item) => {
 });
 
 
-// Add the visible animation dynamically.
+// ---------------------------------------------
+// ADD VISIBLE ANIMATION DYNAMICALLY
+// ---------------------------------------------
 
 const revealStyle =
   document.createElement("style");
+
 
 revealStyle.textContent = `
 
@@ -316,6 +301,7 @@ revealStyle.textContent = `
   }
 
 `;
+
 
 document.head.appendChild(
   revealStyle
