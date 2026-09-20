@@ -46,8 +46,8 @@ const episodes = [
 
   {
     number: 5,
-    status: "production",
-    label: "IN PRODUCTION"
+    status: "complete",
+    label: "COMPLETE"
   },
 
   {
