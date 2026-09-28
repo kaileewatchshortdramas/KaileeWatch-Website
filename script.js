@@ -52,8 +52,8 @@ const episodes = [
 
   {
     number: 6,
-    status: "future",
-    label: "NOT YET IN PRODUCTION",
+    status: "complete",
+    label: "COMPLETE",
     special: true
   },
 
